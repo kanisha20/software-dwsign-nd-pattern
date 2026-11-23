@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Database Credentials -->
+    <context-param>
+        <param-name>jdbcUrl</param-name>
+        <param-value>jdbc:mysql://localhost:3306/pgdb</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbUser</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <!--
+      TASK 2: OTP Validity Window in Seconds (300 = 5 minutes).
+      For expiry testing (Task 3), temporarily set this to 20 seconds!
+    -->
+    <context-param>
+        <param-name>otpValiditySeconds</param-name>
+        <param-value>300</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
