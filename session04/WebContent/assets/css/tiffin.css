@@ -1,0 +1,71 @@
+/* TiffinBox Admin Custom Styling */
+:root {
+    --primary-color: #e65100;
+    --primary-hover: #bf360c;
+    --sidebar-bg: #212529;
+    --sidebar-active: #e65100;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar styling */
+.sidebar {
+    min-height: 100vh;
+    background-color: var(--sidebar-bg);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar .nav-link {
+    color: #adb5bd;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: 4px 10px;
+    transition: all 0.2s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: #fff !important;
+    background-color: var(--sidebar-active) !important;
+}
+
+/* Navbar */
+.top-navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Stat Cards */
+.card-stat {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card-stat:hover {
+    transform: translateY(-3px);
+}
+
+.card-pending-alert {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+.badge-delivered {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-pending {
+    background-color: #fd7e14;
+    color: white;
+}
